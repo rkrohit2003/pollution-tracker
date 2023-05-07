@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import "./Pollution.css"
+import Chart from "react-apexcharts"
 
 export const Pollution = () => {
     const [pollution, setPollution] = useState();
@@ -60,20 +61,26 @@ export const Pollution = () => {
           </table>
           </div>
           <div>
+            <Chart type='pie' height={600} series={[pollution.list[0].components.co,pollution.list[0].components.no2,pollution.list[0].components.so2,pollution.list[0].components.o3,pollution.list[0].components.pm2_5,pollution.list[0].components.pm10]}
+            options={{labels:["CO","NO<sub>2</sub>","SO<sub>2</sub>","O<sub>3</sub>","PM<sub>2.5</sub>","PM<sub>10</sub>"]}}
+            >
+            </Chart>
+          </div>
+          <div className='aq'>
             {aqi===1 && (
-                <p>AQI of {cityName} is Good.</p>
+                <p id='aqgood'>AQI of {cityName} is Good.</p>
             )}
             {aqi===2 && (
-                <p>AQI of {cityName} is Fair.</p>
+                <p id='aqfair'>AQI of {cityName} is Fair.</p>
             )}
             {aqi===3 && (
-                <p>AQI of {cityName} is Moderate.</p>
+                <p id='aqmod'>AQI of {cityName} is Moderate.</p>
             )}
             {aqi===4 && (
-                <p>AQI of {cityName} is Poor.</p>
+                <p id='aqpoor'>AQI of {cityName} is Poor.</p>
             )}
             {aqi===5 && (
-                <p>AQI of {cityName} is Very Poor.</p>
+                <p id='aqvpoor'>AQI of {cityName} is Very Poor.</p>
             )}
           </div>
           </div>)}

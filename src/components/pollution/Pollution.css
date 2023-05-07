@@ -4,3 +4,28 @@
 h1{
     text-align: center;
 }
+.aq p{
+    text-align: center;
+    font-size: x-large;
+}
+#aqgood{
+    color: white;
+    background-color: green;
+}
+#aqfair{
+    background-color: greenyellow;
+}
+#aqmod{
+    background-color: rgb(221, 232, 12);
+}
+#aqpoor{
+    color: white;
+    background-color: orange
+}
+#aqvpoor{
+    color: white;
+    background-color: red;
+}
+.piechart{
+    height: 650px;
+}
