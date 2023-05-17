@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.254a1e49.css","mappings":"AAAA,MACI,eACJ,CCFA,MACI,aACJ,CACA,GACI,iBACJ","sources":["components/location/Location.css","components/pollution/Pollution.css"],"sourcesContent":[".minH{\r\n    min-height: 90vh;\r\n}",".over{\r\n    overflow: auto;\r\n}\r\nh1{\r\n    text-align: center;\r\n}"],"names":[],"sourceRoot":""}
