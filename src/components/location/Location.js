@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./Location.css";
 
@@ -11,7 +11,7 @@ export const Location = () => {
     const cityName = event.target.elements.city.value;
     const stateName = event.target.elements.state.value;
     const countryName = event.target.elements.country.value;
-    const locationResponse = await fetch(`https://cors-anywhere.herokuapp.com/api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateName},${countryName}&limit=5&appid=18f41b92768e1f4006d4661cdd7c1c6e`);
+    const locationResponse = await fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/geo/1.0/direct?q=${cityName},${stateName},${countryName}&limit=5&appid=18f41b92768e1f4006d4661cdd7c1c6e`);
     const [locationData] = await locationResponse.json();
     if (locationData) {
       navigate('/pollution', { state: locationData });

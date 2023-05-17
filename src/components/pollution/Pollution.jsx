@@ -11,7 +11,7 @@ export const Pollution = () => {
     const longitude=loc.lon;
     const cityName=loc.name;
     const fetchData=async()=>{
-            const pollutionResponse=await fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${latitude}&lon=${longitude}&appid=18f41b92768e1f4006d4661cdd7c1c6e`);
+            const pollutionResponse=await fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/air_pollution?lat=${latitude}&lon=${longitude}&appid=18f41b92768e1f4006d4661cdd7c1c6e`);
             const pollutionData=await pollutionResponse.json();
             setPollution(pollutionData);
             setAqi(pollutionData.list[0].main.aqi);
