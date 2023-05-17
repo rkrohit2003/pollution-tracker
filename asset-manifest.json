@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pollution-tracker/static/css/main.8f35d800.css",
-    "main.js": "/pollution-tracker/static/js/main.2339c592.js",
+    "main.js": "/pollution-tracker/static/js/main.854ed858.js",
     "index.html": "/pollution-tracker/index.html",
     "main.8f35d800.css.map": "/pollution-tracker/static/css/main.8f35d800.css.map",
-    "main.2339c592.js.map": "/pollution-tracker/static/js/main.2339c592.js.map"
+    "main.854ed858.js.map": "/pollution-tracker/static/js/main.854ed858.js.map"
   },
   "entrypoints": [
     "static/css/main.8f35d800.css",
-    "static/js/main.2339c592.js"
+    "static/js/main.854ed858.js"
   ]
 }
