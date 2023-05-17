@@ -7,7 +7,7 @@ import { Pollution } from './components/pollution/Pollution';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/pollution-tracker'>
     <Header/>
     <Routes>
     <Route path='/' element={<Location/>}></Route>
